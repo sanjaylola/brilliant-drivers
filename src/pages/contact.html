@@ -1,0 +1,92 @@
+<!-- {
+  "path": "/contact-us/",
+  "nav": "contact",
+  "priority": "0.8",
+  "title": "Contact Us Driving School Mississauga - Brilliant Drivers",
+  "description": "Reach Brilliant Drivers and leave us a message. We will reach you by phone or email. Best driving lesson service to pass your road test in Brampton & Mississauga."
+} -->
+<section class="page-hero">
+  <img class="page-hero__bg" src="/assets/img/Driver-training-by-licenced-driving-instructor.webp" alt="" width="1024" height="682">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li aria-current="page">Contact Us</li>
+    </ol>
+    <span class="eyebrow eyebrow--light">We're Here To Help</span>
+    <h1>Get In Touch With Us</h1>
+    <p>Have a question? Leave us a brief message and a customer service representative from Brilliant Drivers will get in touch as soon as possible.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+    <div class="form-card" data-reveal>
+      <h2>Leave Us A Message</h2>
+      <p class="form-intro">We will reach you by phone or email to answer all your questions in detail.</p>
+      <form action="/api/submit.php" method="post" data-ajax>
+        <input type="hidden" name="form_type" value="contact">
+        <input type="hidden" name="_ts" value="">
+        <div class="hp" aria-hidden="true">
+          <label for="contact-website">Website</label>
+          <input id="contact-website" type="text" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="form-grid">
+          <div class="field field--full">
+            <label for="c_name">Name <span class="req">*</span></label>
+            <input id="c_name" name="name" type="text" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="c_phone">Phone <span class="req">*</span></label>
+            <input id="c_phone" name="phone" type="tel" required autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="c_email">Email <span class="req">*</span></label>
+            <input id="c_email" name="email" type="email" required autocomplete="email">
+          </div>
+          <div class="field field--full">
+            <label for="c_message">Message <span class="req">*</span></label>
+            <textarea id="c_message" name="message" required placeholder="How can we help you?"></textarea>
+          </div>
+        </div>
+        <div class="form-actions" style="margin-top: 20px;">
+          <button class="btn btn--primary btn--lg" type="submit">{{icon:send}} Send Message</button>
+        </div>
+        <div class="form-status" role="status" aria-live="polite" tabindex="-1"></div>
+      </form>
+    </div>
+
+    <div class="info-list" data-reveal>
+      <a class="info" href="tel:+14162762399">
+        <span class="info__icon">{{icon:phone}}</span>
+        <span><small>Call Us</small><strong>416-276-2399</strong></span>
+      </a>
+      <a class="info" href="mailto:info@brilliantdrivers.ca">
+        <span class="info__icon">{{icon:mail}}</span>
+        <span><small>Email Us</small><strong>info@brilliantdrivers.ca</strong></span>
+      </a>
+      <div class="info">
+        <span class="info__icon">{{icon:pin}}</span>
+        <span><small>Office Location</small><strong>47 Feather Reed Way, Brampton, ON, L6R 2Z7</strong></span>
+      </div>
+      <div class="info">
+        <span class="info__icon">{{icon:car}}</span>
+        <span><small>Service Areas</small><strong>Brampton, Mississauga, Caledon &amp; Malton</strong></span>
+      </div>
+      <div class="aside-card aside-card--orange">
+        <h3>Packages And Prices</h3>
+        <p>Our driving school has programs and packages for new learners and experienced drivers within a reasonable budget. Start Beginner Driver Education (BDE) Course with <strong>$200</strong>.</p>
+        <a class="btn btn--dark" href="/programs-and-fees/" style="margin-top: 14px;">Click For More Details {{icon:arrow-right}}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt section--tight">
+  <div class="container" data-reveal>
+    <div class="map">
+      <iframe title="Brilliant Drivers – 47 Feather Reed Way, Brampton" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=47+Feather+Reed+Way,+Brampton,+ON+L6R+2Z7&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+{{> cta}}

@@ -1,0 +1,240 @@
+<!-- {
+  "path": "/register/",
+  "nav": "register",
+  "priority": "0.9",
+  "title": "Register | Ministry MTO Approved | RoadTest | - Brilliant Drivers",
+  "description": "Register for Ministry (MTO) approved Beginner Drivers Education Course, Individual Driving Lessons, and Car available for Road Test with licenced instructors."
+} -->
+<section class="page-hero">
+  <img class="page-hero__bg" src="/assets/img/Preparing-for-g2-road-test.webp" alt="" width="1198" height="698">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li aria-current="page">Register</li>
+    </ol>
+    <span class="eyebrow eyebrow--light">Enroll Online</span>
+    <h1>Registration Form</h1>
+    <p>*No information provided in this Registration Form to register for any of our services is stored on our web servers for data security and privacy.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container form-layout">
+    <div class="form-card" data-reveal>
+      <h2>Student Registration</h2>
+      <p class="form-intro">Complete the form below and our office will contact you promptly to confirm your schedule and payment options.</p>
+
+      <form action="/api/submit.php" method="post" data-ajax>
+        <input type="hidden" name="form_type" value="register">
+        <input type="hidden" name="_ts" value="">
+        <div class="hp" aria-hidden="true">
+          <label for="reg-website">Website</label>
+          <input id="reg-website" type="text" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <fieldset>
+          <legend class="fieldset-title"><span class="step">1</span> Personal Information</legend>
+          <div class="form-grid form-grid--3">
+            <div class="field">
+              <label for="first_name">First Name <span class="req">*</span></label>
+              <input id="first_name" name="first_name" type="text" required autocomplete="given-name">
+            </div>
+            <div class="field">
+              <label for="middle_name">Middle Name</label>
+              <input id="middle_name" name="middle_name" type="text" autocomplete="additional-name">
+            </div>
+            <div class="field">
+              <label for="last_name">Last Name <span class="req">*</span></label>
+              <input id="last_name" name="last_name" type="text" required autocomplete="family-name">
+            </div>
+          </div>
+
+          <div class="form-grid" style="margin-top: 18px;">
+            <div class="field">
+              <label for="phone">Phone <span class="req">*</span></label>
+              <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="e.g. 416-555-0199">
+            </div>
+            <div class="field">
+              <label for="email">Email <span class="req">*</span></label>
+              <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+            </div>
+            <div class="field">
+              <label for="dob">Date Of Birth <span class="req">*</span></label>
+              <input id="dob" name="dob" type="date" required autocomplete="bday">
+            </div>
+            <div class="field">
+              <span class="label">Gender <span class="req">*</span></span>
+              <div class="choice-row">
+                <label class="chip"><input type="radio" name="gender" value="Male" required><span>Male</span></label>
+                <label class="chip"><input type="radio" name="gender" value="Female"><span>Female</span></label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="fieldset-title"><span class="step">2</span> Address &amp; Licence Details</legend>
+          <div class="form-grid">
+            <div class="field field--full">
+              <label for="address">Address <span class="req">*</span></label>
+              <input id="address" name="address" type="text" required autocomplete="street-address">
+            </div>
+            <div class="field">
+              <label for="city">City <span class="req">*</span></label>
+              <input id="city" name="city" type="text" required autocomplete="address-level2" placeholder="Brampton">
+            </div>
+            <div class="field">
+              <label for="province">Province <span class="req">*</span></label>
+              <input id="province" name="province" type="text" required value="Ontario" autocomplete="address-level1">
+            </div>
+            <div class="field">
+              <label for="postal_code">Postal Code <span class="req">*</span></label>
+              <input id="postal_code" name="postal_code" type="text" required autocomplete="postal-code" placeholder="L6R 2Z7">
+            </div>
+            <div class="field">
+              <label for="licence_number">Driver Licence Number</label>
+              <input id="licence_number" name="licence_number" type="text" placeholder="Optional if not yet issued">
+            </div>
+            <div class="field">
+              <span class="label">Licence Class <span class="req">*</span></span>
+              <div class="choice-row">
+                <label class="chip"><input type="radio" name="licence_class" value="G1" required><span>G1</span></label>
+                <label class="chip"><input type="radio" name="licence_class" value="G2"><span>G2</span></label>
+                <label class="chip"><input type="radio" name="licence_class" value="G"><span>G</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="licence_expiry">Licence Expiry Date</label>
+              <input id="licence_expiry" name="licence_expiry" type="date">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="fieldset-title"><span class="step">3</span> Pick Your Option</legend>
+          <div class="package-options">
+            <label class="pkg">
+              <input type="radio" name="package" value="bde-regular" required>
+              <span class="pkg__box">
+                <span class="pkg__text"><strong>BDE Course (Online) Popular Package</strong><small>30h Online + 10h In-Vehicle</small></span>
+                <span class="pkg__price">$574.99 + Tax</span>
+              </span>
+            </label>
+            <label class="pkg">
+              <input type="radio" name="package" value="bde-advanced">
+              <span class="pkg__box">
+                <span class="pkg__text"><strong>BDE Course (Online) Plus Package</strong><small>30h Online + 12h In-Vehicle</small></span>
+                <span class="pkg__price">$674.99 + Tax</span>
+              </span>
+            </label>
+            <label class="pkg">
+              <input type="radio" name="package" value="bde-enhanced">
+              <span class="pkg__box">
+                <span class="pkg__text"><strong>BDE Course (Online) Premium Package</strong><small>30h Online + 15h In-Vehicle</small></span>
+                <span class="pkg__price">$774.99 + Tax</span>
+              </span>
+            </label>
+            <label class="pkg">
+              <input type="radio" name="package" value="road-test-in-city">
+              <span class="pkg__box">
+                <span class="pkg__text"><strong>Road Test Package (Brampton, Mississauga)</strong><small>Vehicle + 1 Refresher Lesson</small></span>
+                <span class="pkg__price">$200</span>
+              </span>
+            </label>
+            <label class="pkg">
+              <input type="radio" name="package" value="road-test-out-of-city">
+              <span class="pkg__box">
+                <span class="pkg__text"><strong>Road Test Package (Outside Brampton, Mississauga)</strong><small>Vehicle + 1 Refresher Lesson</small></span>
+                <span class="pkg__price">$250</span>
+              </span>
+            </label>
+            <label class="pkg">
+              <input type="radio" name="package" value="lesson-45">
+              <span class="pkg__box">
+                <span class="pkg__text"><strong>Individual Car Lesson (45 Min)</strong><small>Pay As You Go · MTO Instructor</small></span>
+                <span class="pkg__price">$40 / 45 Min</span>
+              </span>
+            </label>
+            <label class="pkg">
+              <input type="radio" name="package" value="lesson-60">
+              <span class="pkg__box">
+                <span class="pkg__text"><strong>Individual Car Lesson (60 Min)</strong><small>Pay As You Go · MTO Instructor</small></span>
+                <span class="pkg__price">$45 / 60 Min</span>
+              </span>
+            </label>
+          </div>
+
+          <div class="form-grid" style="margin-top: 20px;">
+            <div class="field">
+              <label for="promo_code">Select Promo Code (if you have any)</label>
+              <select id="promo_code" name="promo_code">
+                <option value="None">I have no Promo Code</option>
+                <option value="INTSTU">INTSTU – Student Discount ($25 Off BDE)</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label for="reg-message">Message / Preferred Schedule</label>
+              <textarea id="reg-message" name="message" placeholder="Let us know your preferred days/times or any questions..."></textarea>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="fieldset-title"><span class="step">4</span> Terms &amp; Conditions</legend>
+          <div class="terms">
+            <ul>
+              <li>Students registered for the BDE Course must complete 20+10 hours of online digital instruction and 10 hours of in-car sessions.</li>
+              <li>Completion Certificate will be issued only when the student has successfully completed the course achieving a passing grade of 70% in the Online BDE Course as well as the road test.</li>
+              <li>All fees for the BDE Course are non-refundable.</li>
+              <li>Scheduled appointments for in-car driving lessons must be cancelled at least 24 hours prior to scheduled time; otherwise full payment for the driving lesson will be charged.</li>
+              <li>Students must complete the course successfully within 1 year of the starting date.</li>
+              <li>Students agree to protect the user ID and password provided to them by our driving school for the online portion of the course.</li>
+            </ul>
+          </div>
+
+          <div class="field" style="margin-bottom: 18px;">
+            <label class="check">
+              <input type="checkbox" name="acceptance" value="Accepted" required>
+              <span>I certify that the statements in this document are accurate and consent to the release of any information contained herein to the Ministry of Transportation, Insurance Bureau of Canada, and the MTO Course Inspector. <span class="req">*</span></span>
+            </label>
+          </div>
+
+          <div class="field">
+            <label for="signature">Signature (By typing your full name below, you agree to sign this form) <span class="req">*</span></label>
+            <input id="signature" name="signature" type="text" required placeholder="Type your full name">
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button class="btn btn--primary btn--lg" type="submit">{{icon:send}} Submit Registration</button>
+          <small>{{icon:lock}} Not stored on web server · Sent securely to our office</small>
+        </div>
+        <div class="form-status" role="status" aria-live="polite" tabindex="-1"></div>
+      </form>
+    </div>
+
+    <aside class="aside-stack">
+      <div class="aside-card aside-card--orange" data-reveal>
+        <h3>Start Any BDE Package With</h3>
+        <span class="aside-big">$200</span>
+        <p>Ask our office about flexible installment plans. Bring your Student ID and use promo code <strong>INTSTU</strong> for $25 off.</p>
+      </div>
+      <div class="aside-card" data-reveal>
+        <h3>What Happens Next?</h3>
+        <ol class="steps-list">
+          <li>We review your registration and package selection.</li>
+          <li>Our coordinator contacts you by phone or email to set up your online BDE access.</li>
+          <li>We schedule your first in-vehicle lesson with home pick-up and drop-off.</li>
+        </ol>
+      </div>
+      <div class="aside-card aside-card--dark" data-reveal>
+        <h3>Need Help Registering?</h3>
+        <p>Call or email our office and we'll walk you through choosing the right package.</p>
+        <p style="margin-top: 14px;">
+          <a href="tel:+14162762399" style="color: #fff; font-weight: 700; display: inline-flex; align-items: center; gap: 8px;">{{icon:phone}} 416-276-2399</a><br>
+          <a href="mailto:info@brilliantdrivers.ca" style="color: var(--orange-light); display: inline-flex; align-items: center; gap: 8px; margin-top: 6px;">{{icon:mail}} info@brilliantdrivers.ca</a>
+        </p>
+      </div>
+    </aside>
+  </div>
+</section>

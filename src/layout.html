@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="robots" content="{{robots}}">
+<link rel="canonical" href="{{canonical}}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_CA">
+<meta property="og:site_name" content="Brilliant Drivers">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="{{ogImage}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#111315">
+<link rel="icon" href="/assets/img/cropped-Logo-150x150.png" sizes="32x32">
+<link rel="icon" href="/assets/img/cropped-Logo-e1608720851672.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/img/cropped-Logo-e1608720851672.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Roboto:wght@300..900&family=Roboto+Slab:wght@400..700&display=swap">
+{{head}}
+<link rel="stylesheet" href="/assets/css/style.css?v={{v_css}}">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DrivingSchool",
+  "name": "Brilliant Drivers",
+  "description": "MTO approved Beginner Driver Education (BDE) course provider and driving school serving Brampton, Mississauga, Caledon and Malton.",
+  "url": "https://brilliantdrivers.ca/",
+  "logo": "https://brilliantdrivers.ca/assets/img/cropped-Logo-e1608720851672.png",
+  "image": "https://brilliantdrivers.ca/assets/img/First-driving-lesson.webp",
+  "telephone": "+1-416-276-2399",
+  "email": "info@brilliantdrivers.ca",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "47 Feather Reed Way",
+    "addressLocality": "Brampton",
+    "addressRegion": "ON",
+    "postalCode": "L6R 2Z7",
+    "addressCountry": "CA"
+  },
+  "areaServed": ["Brampton", "Mississauga", "Caledon", "Malton"],
+  "sameAs": ["https://www.facebook.com/MyBrilliantDrivers"]
+}
+</script>
+</head>
+<body class="{{bodyClass}}">
+<div class="scroll-progress" aria-hidden="true"></div>
+{{> header}}
+<main id="main">
+{{body}}
+</main>
+{{> footer}}
+<script src="/assets/js/main.js?v={{v_js}}" defer></script>
+</body>
+</html>
